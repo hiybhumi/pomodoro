@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(233, 150, 122);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+img {
+    width: clamp(250px,270px,370px); 
+    height: 270px;
+    margin-top: 30px;
+}
+.tomato {
+   
+}
+button {
+    padding: 18px 25px;
+    border-radius: 25px;
+    margin: 10px;
+    border: none;
+    font-size: large;
+}
+.upper {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    /* margin-right: 40px; */
+    margin-top: 20px;
+    /* margin-left: 10px; */
+}
+.lower {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    margin-top: 10px;
+}
+.lower img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.lower img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.lower #play {
+    width: 107px;
+    height: 107px;
+    margin-top: 10px;
+}
+#timer {
+    font-size: 120px;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media (max-width:400px) {
+    .lower {
+        margin-bottom: 50px;
+        margin: auto;
+        margin-right: 50px;
+    }
+    .upper {
+         margin: auto;
+         margin-top: 10px;
+         margin-left: 15px;
+    }
+    .upper button{
+        margin: 2px;
+        padding: auto 6px;
+    }
+    .upper #pomodoro {
+    padding: 30px 8px;
+    }
+    .tomato {
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:500px) {
+    .upper #pomodoro {
+    padding: 30px 8px;
+    }
+}
+@media (max-width) and (min-width:350px) {
+    .lower {
+        margin-bottom: 40px;
+    }
+}
